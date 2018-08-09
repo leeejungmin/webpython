@@ -1,11 +1,26 @@
 #!C:/Python27/python.exe -u
 print("Content-Type: text/html\n")
-print("je suis d'accord")
 
-import cgi
+
+import cgi, os
+
+files = os.listdir('data')
+print(files)
+listStr = ''
+for item in files:
+    listStr = listStr + '<li><a href="index.py?id={name}">{name}</a></li>'.format(name=item)
+
+
 form = cgi.FieldStorage()
-pageId = form["id"].value
-
+if 'id' in form:
+    pageId =form["id"].value
+    description = open('data/'+pageId,'r').read()
+    update_link = '<a href="update.py?id={}">update</a>'.format(pageId)
+else:
+    pageId='Welcome'
+    description = 'Hello, web ,je suis jungmin ^^ enchante!!'
+    update_link = ''
+print(pageId)
 
 print('''
 <!DOCTYPE html>
@@ -17,15 +32,15 @@ print('''
 
   <body>
 
-    <h1><a href="index.html">WEB</a></h1>
+    <h1><a href="index.py">WEB</a></h1>
     <ol>
-        <li><a href="503.html?id=HTML">HTML</a></li>
-        <li><a href="bitnami.css?id=css">CSS</a></li>
-        <li><a href="javascriptex.html?id=JavaScript">JavaScript</a></li>
+     {listStr}
     </ol>
+    <a href="create.py">create</a>
+    {update_link}
+    
     <h2>{title}</h2>
-    <p>JE suis Jungmin. J'etudie francais et programmation.c'est pour
-    ca que j'ecris le francais ici , cette page.^^ </p>
+    <p>{desc}</p>
   </body>
 </html>
-'''.format(title='pageId'))
+'''.format(title=pageId, desc=description, listStr=listStr, update_link=update_link))
