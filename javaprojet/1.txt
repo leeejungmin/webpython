@@ -1,0 +1,9 @@
+wp, textbo , drupal, zeroboard
+
+게시판, 블로그 , 사이트빌더, 위키피디아, facebook
+
+    <input type="button" id="big"  value="buttonon" onclick="picture()">
+
+내일 할꺼는 여기서 찾아서 다 수정하기 ...
+https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog
+
