@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB - Javaimage</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script type="text/javascript">
+
+
+      function picture(){
+        var pic="https://www.plaque-de-pub.com/332-thickbox_default/plaque-metal-france.jpg";
+        var img = document.getElementById('bigpic');
+        var target = document.querySelector('#big');
+
+       if(target.value == 'buttonon'){
+         img.src = pic.replace('90*90','225*225');
+         img.style.display='block';
+         target.value = 'buttondown';}
+       else{
+         img.src = null;
+         target.value = 'buttonon';
+
+      }
+    }
+
+
+    </script>
+    <style>
+    #titlle{
+
+      text-align: center;
+      text-decoration: none;
+      font-size: 50px;
+
+
+    }
+    a{
+      text-decoration: none;
+    }
+    #big {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oswald';
+}
+    </style>
+
+
+
+  </head>
+  <body>
+    <div id="titlle" >
+      <a href="index.html" >WEB</a>
+    </div>
+    <!-- <h1><a href ="index.html" id="titlle">WEB</a></h1> -->
+    <div >
+    <img id="bigpic" src="bigpic" style="display:none;"/>
+
+    <input type="button" id="big"  value="buttonon" onclick="picture()">
+  </div>
+  </body>
+
+</html>

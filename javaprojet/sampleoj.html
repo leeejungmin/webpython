@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WELCOME JUNG</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script type="text/javascript">
+
+
+      function picture(){
+        var pic="https://www.plaque-de-pub.com/332-thickbox_default/plaque-metal-france.jpg";
+        var img = document.getElementById('bigpic');
+        var target = document.querySelector('#big');
+
+       if(target.value == 'buttonon'){
+         img.src = pic.replace('90*90','225*225');
+         img.style.display='block';
+         target.value = 'buttondown';}
+       else{
+         img.src = null;
+         target.value = 'buttonon';
+
+      }
+    }
+
+
+    </script>
+    <style>
+    #titlle{
+      /* margin: none; */
+      text-align: center;
+      text-decoration: none;
+      font-size: 50px;
+      background-color: coral;
+      height: 120px;
+
+    }
+    #letter{
+      /* vertical-align: bottom; */
+      /* top: 50%;
+      bottom:  50%; */
+
+      /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(0%, 30%);
+
+    }
+    a{
+
+      text-decoration: none;
+
+      top: 50%;
+      left: 50%;
+    }
+    #big {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oswald';
+    float:right;
+    cursor: pointer;
+    text-indent: -9000px; text-transform: capitalize;
+}
+    #left{
+      float: left;
+      vertical-align: bottom;
+      margin-right: 5.5px;
+      margin-left: 5.5px;
+      margin-bottom: 5.5px;
+      margin-top: 24.5px;
+      font-size: 30px;
+      font-family: 'Oswald';
+      color:#ffffff;
+    }
+    #right{
+      float: right;
+      vertical-align: bottom;
+      margin-right: 5.5px;
+      margin-left: 5.5px;
+      margin-bottom: 5.5px;
+      margin-top: 24.5px;
+
+    }
+    #secondtitle{
+      background-color: #ffcc00;
+      width: 100%;
+      height: 80px;
+      text-decoration: none;
+      display:block;
+    }
+
+    #big:hover{
+      background-color: white;
+      color: #ffcc00;
+      /* border: 2px solid #f44336; */
+    }
+     #rock {
+
+       width: 130px;
+       height: 75px;
+       background-repeat: no-repeat;
+       /* background-size: 50% 50%; */
+       border: none;
+       background: url(button.png) 50% 50% no-repeat;}
+      body{
+        background-color: #FFD700
+      }
+      .img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    overflow: auto;
+
+    }
+      .img-container.img{
+        background-image: contain, ;
+        /* height:291px; */
+
+      }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    * {
+    box-sizing: border-box;
+    }
+
+    </style>
+
+
+
+  </head>
+  <body>
+
+    <div id="titlle" >
+      <div id="letter" >
+      <a href="index.html" >LEEJUNGMIN</a>
+      </div>
+    </div>
+    <div id="secondtitle">
+      <div id="left"> "Bon Jour!!"</div>
+      <div id="right">
+      <input type="button" id="big"  value="buttonon" onclick="picture()">
+    </div>
+    </div>
+    <div >
+      <img id="bigpic" src="bigpic" style="display:none;"/>
+      <!--  ';lkjvok <a href="mailto:joe@example.com?subject=feedback">email me</a>'<input type="button" id="rock"   > -->
+
+    </div>
+    <div class="clearfix">
+      <div class="img-container">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" alt="France" style="width:100%; height:291px";>
+      </div>
+      <div class="img-container">
+        <img src="https://atiyeafarinan.com/wp-content/uploads/2018/05/Francelife.jpg"
+        alt="tour eiffel" style="width:100%; height:291px";>
+
+      </div>
+      <div class="img-container">
+        <img
+        src="https://www.globalpartnership.org/sites/default/files/styles/1400x640/public/france-banner-mobile_0.jpg?itok=UWM_Ky1R"
+        alt="louvre" style="width:100%; height:291px";>
+      </div>
+  </div>
+  <div class="clearfix">
+    <div class="img-container">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" alt="France" style="width:100%; height:291px";>
+    </div>
+    <div class="img-container">
+      <img src="https://atiyeafarinan.com/wp-content/uploads/2018/05/Francelife.jpg"
+      alt="tour eiffel" style="width:100%; height:291px";>
+
+    </div>
+    <div class="img-container">
+      <img
+      src="https://www.globalpartnership.org/sites/default/files/styles/1400x640/public/france-banner-mobile_0.jpg?itok=UWM_Ky1R"
+      alt="louvre" style="width:100%; height:291px";>
+    </div>
+</div>
+  </body>
+
+</html>
+
+<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog -->
