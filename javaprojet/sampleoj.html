@@ -9,6 +9,17 @@
     <script type="text/javascript">
 
 
+    function view() {
+        imgsrc = "pic_small.png";
+
+
+        viewwin = window.open(imgsrc,'viewwin', 'width=600,height=300');
+        }
+
+
+
+
+
       function picture(){
         var pic="https://www.plaque-de-pub.com/332-thickbox_default/plaque-metal-france.jpg";
         var img = document.getElementById('bigpic');
@@ -20,6 +31,7 @@
          target.value = 'buttondown';}
        else{
          img.src = null;
+         img.style.display='none';
          target.value = 'buttonon';
 
       }
@@ -66,6 +78,7 @@
     float:right;
     cursor: pointer;
     text-indent: -9000px; text-transform: capitalize;
+    margin-bottom: none;
 }
     #left{
       float: left;
@@ -83,7 +96,7 @@
       vertical-align: bottom;
       margin-right: 5.5px;
       margin-left: 5.5px;
-      margin-bottom: 5.5px;
+      margin-bottom: none;
       margin-top: 24.5px;
 
     }
@@ -113,13 +126,43 @@
       }
       .img-container {
     float: left;
-    width: 33.33%;
-    padding: 5px;
+    width: 33.0%;
+    padding: 2px;
     overflow: auto;
+    margin-left:3px;
+    margin-bottom: 5px;
+    background-color: white;
+    font-family: Arial;
+    z-index: 3;
+    cursor: pointer;
 
     }
+
+    /* .img-container:target{
+      height: 450px;
+        width: 500px;
+    }
+    .img-container:target+.close{
+      display: block;
+    }
+    .img-container:target+.close+.expand{
+      display: none;
+    } */
+    .img-container:hover{
+      /* border: 5px solid #f4f4f4; */
+
+
+
+      transform: scale(1.5);
+     /* -webkit-transition-duration: 1s;
+   -moz-transition-duration: 1s;
+   -o-transition-duration: 1s;
+   transition-duration: 1s; */
+    /* z-index: 3; */
+    }
+
       .img-container.img{
-        background-image: contain, ;
+        background-image: contain ;
         /* height:291px; */
 
       }
@@ -151,42 +194,56 @@
     </div>
     </div>
     <div >
-      <img id="bigpic" src="bigpic" style="display:none;"/>
+      <img id="bigpic" src="bigpic" vertical-align="text-bottom"  style="display:none;"/>
       <!--  ';lkjvok <a href="mailto:joe@example.com?subject=feedback">email me</a>'<input type="button" id="rock"   > -->
 
     </div>
     <div class="clearfix">
       <div class="img-container">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" alt="France" style="width:100%; height:291px";>
+        <h2>Drapeau Francais</h2>
+        <p>Salut , c'est une drapeau francais!</p>
       </div>
       <div class="img-container">
         <img src="https://atiyeafarinan.com/wp-content/uploads/2018/05/Francelife.jpg"
         alt="tour eiffel" style="width:100%; height:291px";>
+        <h2>Drapeau Francais</h2>
+        <p>Salut , c'est une drapeau francais!</p>
 
       </div>
       <div class="img-container">
         <img
         src="https://www.globalpartnership.org/sites/default/files/styles/1400x640/public/france-banner-mobile_0.jpg?itok=UWM_Ky1R"
         alt="louvre" style="width:100%; height:291px";>
+        <h2>Drapeau Francais</h2>
+        <p>Salut , c'est une drapeau francais!</p>
       </div>
   </div>
   <div class="clearfix">
     <div class="img-container">
       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEX///8AI5XtKTkAFJJ6gbrzg4ntHTC7o1gDAAAA/klEQVR4nO3QSQ0AIAADsHH6l4yKPUhaCc2oWTs9586aOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHixIkTJ06cOHHy4ckD5KrN4eD2boIAAAAASUVORK5CYII=" alt="France" style="width:100%; height:291px";>
+      <h2>Drapeau Francais</h2>
+      <p>Salut , c'est une drapeau francais!</p>
     </div>
     <div class="img-container">
       <img src="https://atiyeafarinan.com/wp-content/uploads/2018/05/Francelife.jpg"
       alt="tour eiffel" style="width:100%; height:291px";>
-
+      <h2>Drapeau Francais</h2>
+      <p>Salut , c'est une drapeau francais!</p>
     </div>
     <div class="img-container">
       <img
       src="https://www.globalpartnership.org/sites/default/files/styles/1400x640/public/france-banner-mobile_0.jpg?itok=UWM_Ky1R"
       alt="louvre" style="width:100%; height:291px";>
+      <h2>Drapeau Francais</h2>
+      <p>Salut , c'est une drapeau francais!</p>
     </div>
+    <IMG SRC="pic_small.png" onClick="view();">
 </div>
   </body>
 
 </html>
 
 <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog -->
+<!-- https://www.w3schools.com/jsref/dom_obj_meta.asp -->
+<!-- https://stackoverflow.com/questions/3139811/how-to-link-an-image-and-target-a-new-window -->

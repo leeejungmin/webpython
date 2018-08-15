@@ -1,0 +1,24 @@
+https://www.w3schools.com/jsref/dom_obj_meta.asp
+
+작은 것때문에 배치가 맞지 않았다. 작은 것을 없애기 위해서 
+
+검색 img.style.display='block'을 'none'으로 바꿔야하는걸 알았다.
+
+<!-- https://www.w3schools.com/jsref/dom_obj_meta.asp -->array쪽이었던것같다.
+
+
+----------------------------------------------------------------------------------------------
+창을 항상 크게 열어 놓고 싶은데 윈도를 새로 여는 방법밖에 없는가???
+(hover나 active로는??지속적으로 여는 방법은 없나??)
+
+<IMG SRC="pic_small.jpg" onClick="view();">
+
+<script language="JavaScript">
+
+function view() {
+imgsrc = "pic_big.jpg";
+
+
+viewwin = window.open(imgsrc,'viewwin', 'width=600,height=300');    
+}
+</script>
