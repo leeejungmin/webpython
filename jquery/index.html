@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <p>
+      Press [enter]
+    </p><p>
+      Press [enter]
+    </p><p>
+      Press [enter]
+    </p>
+    <p>
+      Press [enter]
+    </p>
+    <script>
+
+$(document).ready(function(){
+    $("#p1").hover(function(){
+      $(this).hide();
+    });
+
+    $("#p2").hover(function(){
+      $(this).hide();
+    });
+    $("#p3").hover(function(){
+      $(this).hide();
+    });
+    $("#p4").hover(function(){
+      $(this).hide();
+    });
+
+    var menuTrigger = false;
+    /// il commence quand document commence
+    $(document).keypress(function(e){
+      if(e.which == 13){
+        if(menuTrigger === false){
+          $("nav").fadeIn(500);
+          menuTrigger = true;
+        }else if(menuTrigger===true){
+          $("nav").fadeOut(500);
+          meunTrigger = false;
+        }
+      }
+    });
+  });
+// $(document).ready(function(){
+//     $("#menu-toggle").click(function(){
+//       $("#side-nav").show();
+//       ///our hide() or toggle(1000 , function({
+// alert("hi there");
+// }));  끼어 넣을 수도 있다.
+//     });
+// });
+
+    </script>
+  </body>
+</html>
