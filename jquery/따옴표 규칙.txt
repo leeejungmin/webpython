@@ -2,8 +2,11 @@ filename='
 파일경로지정
 메소드안 . 지정 
 php안에서는 이것
+case 'mul' :
 
-
+js
+window.open(filePath + img_to_load + '.jpg');
+<span style='red';></span>
 
 
 echo뒤 =" 
@@ -11,3 +14,7 @@ echo뒤 ="
 $("안 지정")
 <button id="">
 html의 대부분은 ""로
+$last= "lee";
+jquery
+"That div is <span style='color:" +
+    color + ";'>" + color + "</span>."
