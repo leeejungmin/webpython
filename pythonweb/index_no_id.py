@@ -1,4 +1,4 @@
-#!C:/Python27/python.exe -u
+#!C:\Users\dlwjd\AppData\Local\Programs\Python\Python37\python.exe -u
 print("Content-Type: text/html\n")
 
 
@@ -19,7 +19,7 @@ print('''
 
     <h1><a href="index_no_id.py">WEB</a></h1>
     <ol>
-        <li><a href="index.py?id=HTML">HTML</a></li>
+        <li><a href="index.py?id=iii">HTML</a></li>
         <li><a href="index.py?id=CSS">CSS</a></li>
         <li><a href="index.py?id=JavaScript">JavaScript</a></li>
     </ol>

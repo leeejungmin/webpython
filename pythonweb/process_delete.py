@@ -1,4 +1,4 @@
-#!C:/Python27/python.exe -u
+#!C:\Users\dlwjd\AppData\Local\Programs\Python\Python37\python.exe -u
 import cgi, os
 
 form = cgi.FieldStorage()
