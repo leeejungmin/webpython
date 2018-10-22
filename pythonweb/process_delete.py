@@ -7,4 +7,5 @@ pageId = form["pageId"].value
 os.remove('data/'+pageId)
 
 print("Location: index.py")
+#deplace
 print("\n")

@@ -10,9 +10,9 @@ from view import getList
 form = cgi.FieldStorage()
 if 'id' in form:
     pageId =form["id"].value
-    description = open('data/'+pageId,'r').read()
-    description = description.replace('<', '&lt;')
-    description = description.replace('>', '&gt;')
+    description = open('sou/'+pageId+'.txt','r').read()
+    # description = description.replace('<', '&lt;')
+    # description = description.replace('>', '&gt;')
 
     update_link = '<a href="update.py?id={}">update</a>'.format(pageId)
     delete_action ='''
@@ -41,7 +41,8 @@ print('''
 
     <h1><a href="index.py">WEB</a></h1>
     <ol>
-     {listStr}
+    <p>helllooo jungmin!!1</p>
+
     </ol>
     <a href="create.py">create</a>
     {update_link}
@@ -50,4 +51,4 @@ print('''
     <p>{desc}</p>
   </body>
 </html>
-'''.format(title=pageId, desc=description, listStr=getList(), update_link=update_link, delete_action=delete_action))
+'''.format(title=pageId, desc=description,  update_link=update_link, delete_action=delete_action))

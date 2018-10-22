@@ -11,5 +11,5 @@ description = form['description'].value
 open_file = open('data/' +title, 'w')
 open_file.write(description)
 
-print("Location: /bitnami.css?id="+title)
+print("Location: /sou/1.html?id="+title)
 print("\n")

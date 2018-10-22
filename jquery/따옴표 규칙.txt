@@ -3,6 +3,7 @@ filename='
 메소드안 . 지정 
 php안에서는 이것
 case 'mul' :
+$uid = $row['uid'];
 
 js
 window.open(filePath + img_to_load + '.jpg');
@@ -15,6 +16,9 @@ $("안 지정")
 <button id="">
 html의 대부분은 ""로
 $last= "lee";
+$this -> connect() -> prepare("select * from~~~~ where id=?");
 jquery
 "That div is <span style='color:" +
     color + ";'>" + color + "</span>."
+$data."<br">/
+

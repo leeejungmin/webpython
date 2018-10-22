@@ -8,7 +8,7 @@ from view import getList
 form = cgi.FieldStorage()
 if 'id' in form:
     pageId = form["id"].value
-    description = open('data/'+pageId, 'r').read()
+    description = open('sou/'+pageId, 'r').read()
 else:
     pageId = 'Welcome'
     description = 'Hello, web'
